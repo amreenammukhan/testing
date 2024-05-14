@@ -1,0 +1,5 @@
+[DEFAULT]
+BASEURL=http://localhost:8080/
+[InternetShortcut]
+URL=http://localhost:8080/
+Modified=8002EAAE714AC7019D

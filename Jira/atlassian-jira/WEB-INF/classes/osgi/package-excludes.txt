@@ -1,0 +1,15 @@
+com.atlassian.greenhopper
+com.codahale.metrics*
+com.sun.jersey.*
+javax.ws.*
+org.apache.tomcat.*
+org.apache.catalina.*
+org.apache.jasper.*
+org.apache.coyote.*
+org.apache.naming*
+*..svn*
+com.atlassian.audit.jira*
+com.atlassian.audit.core.ecosystem
+com.atlassian.audit.core.impl*
+com.atlassian.audit.core.spi
+com.atlassian.audit.core

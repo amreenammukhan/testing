@@ -1,0 +1,14 @@
+com.atlassion.jwt
+com.querydsl.*
+com.mysema.commons.lang
+
+#Coming from platform 6.5
+
+com.atlassian.plugin.webresource.*
+com.atlassian.plugin.web.baseconditions.*
+com.atlassian.plugin.web.conditions.*
+com.atlassian.plugin.web.descriptors.*
+com.atlassian.plugin.web.impl.*
+com.atlassian.plugin.web.model.*
+com.atlassian.plugin.web.renderer.*
+com.atlassian.plugins.less.*

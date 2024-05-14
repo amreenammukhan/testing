@@ -1,0 +1,14 @@
+<atlassian-plugin key="jira.system.attachment.validators" i18n-name-key="attachment.validators.plugin.name" name="Jira Attachment Validators Plugin">
+    <plugin-info>
+        <description key="attachment.validators.plugin.description">This plugin defines default attachment validators in Jira.</description>
+        <vendor name="Atlassian" url="https://www.atlassian.com"/>
+        <version>1.0</version>
+    </plugin-info>
+
+    <attachment-validator key="attachment-file-extension-validator"
+                          i18n-name-key="attachment.validators.plugin.module.file.extension.name"
+                          i18n-description-key="attachment.validators.plugin.module.file.extension.description"
+                          class="com.atlassian.jira.plugin.attachment.AttachmentFileExtensionValidator">
+    </attachment-validator>
+
+</atlassian-plugin>

@@ -1,0 +1,1 @@
+define("jira/jquery/plugins/escapeSelector",["jquery"],(function(e){e.escapeSelector||(e.escapeSelector=CSS.escape);return e.escapeSelector}));require("jira/jquery/plugins/escapeSelector");

@@ -1,0 +1,39 @@
+@import "webstatic:/ui/imports/colours";
+
+/* Styles for the shared by lozenge - stolen from .aui-lozenge-success.aui-lozenge-subtle */
+
+.aui-lozenge {
+    &.status-active {
+        background-color: var(--ds-background-brand-bold-pressed, #3b73af);
+        border-color: var(--ds-border-brand, #3b73af);
+        color: var(--ds-text-inverse, white);
+    }
+    &.status-draft {
+        background-color: var(--ds-background-input, #505050);
+        border-color: var(--ds-border, #505050);
+        color: var(--ds-text-inverse, white);
+    }
+    &.status-inactive {
+        background-color: var(--ds-background-accent-gray-subtle, #ccc);
+        border-color: var(--ds-border-accent-gray, #ccc);
+        color: var(--ds-text, #333);
+    }
+    &.status-required {
+        background-color: var(--ds-surface, #fff);
+        border-color: var(--ds-border-inverse, #fff);
+        color: var(--ds-text-brand, #326ca6);
+    }
+
+    &.used-by {
+        background-color: var(--ds-background-information, @aui-color-B50);
+        color: var(--ds-text, @aui-color-N500);
+
+        > em {
+            font-style: normal;
+
+            > a {
+                color: var(--ds-background-information-bold, @aui-color-B400);
+            }
+        }
+    }
+}

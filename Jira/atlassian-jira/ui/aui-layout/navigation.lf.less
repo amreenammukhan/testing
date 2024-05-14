@@ -1,0 +1,21 @@
+@import "../imports/jira-colours-lookandfeel";
+
+.aui-page-header-actions {
+    .aui-nav-pagination {
+        // arrows and dividers on page nav
+        .aui-nav-previous a {
+            &:hover {
+                &::after {
+                    border-right-color: var(--jira-color-menuTxtColour);
+                }
+            }
+        }
+        .aui-nav-next a {
+            &:hover {
+                &::after {
+                    border-left-color: var(--jira-color-menuTxtColour);
+                }
+            }
+        }
+    }
+}

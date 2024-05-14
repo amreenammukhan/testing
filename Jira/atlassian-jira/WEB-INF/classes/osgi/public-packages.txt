@@ -1,0 +1,345 @@
+# Atlassian owned components.
+com.atlassian.*
+io.atlassian.*
+
+#A4J
+com.codebarrel.*
+
+#Workflow designer plugin
+com.sysbliss.*
+
+#Insight/Assets - JSD
+com.riadalabs.*
+io.riada.*
+
+#Active Objects
+net.java.ao
+net.java.ao.*
+
+#JSW
+com.pyxis.greenhopper.*
+
+#Portfolio/AR4J
+com.radiantminds.roadmap.api.*
+com.radiantminds.roadmaps.*
+com.radiantminds.roadmaps-jira.*
+
+# botched export from jwt plugin, already deprecated. Note 'o' in the middle.
+com.atlassion.jwt
+
+#auiplugin
+assets
+i18n
+
+# atlassian-p4package
+com.perforce.api
+
+#############
+#JDK APIs
+java.*
+javax.*
+jdk.*
+org.ietf.*
+org.w3c.*
+org.omg.*
+org.xml.*
+netscape.javascript.*
+org.omg.*
+com.sun.*
+sun.*
+
+##############################
+#Third party exports:
+
+#guava
+com.google.common.*
+
+#os propertyset
+com.opensymphony.ejb
+com.opensymphony.module.propertyset
+com.opensymphony.module.propertyset.*
+
+#osworkflow
+com.opensymphony.workflow
+com.opensymphony.workflow.*
+
+#oscore
+com.opensymphony.module.random
+com.opensymphony.module.sequence
+com.opensymphony.util
+com.opensymphony.provider
+com.opensymphony.provider.*
+
+# sitemesh
+com.opensymphony.module.sitemesh
+com.opensymphony.module.sitemesh.*
+com.opensymphony.sitemesh
+com.opensymphony.sitemesh.*
+
+#commons-httpclient:commons-httpclient
+org.apache.commons.httpclient
+org.apache.commons.httpclient.*
+
+#commons-lang:commons-lang - velocity and jim uses them
+org.apache.commons.lang
+org.apache.commons.lang.*
+
+#log4j-1.2-api
+org.apache.log4j
+org.apache.log4j.*
+
+#log4j 2 - uses in greenhopper only, but e.g. scriptrunner relies on this heavily as we don't have any alternative APIs to plug into logging system
+org.apache.logging.log4j
+org.apache.logging.log4j.*
+org.apache.logging.slf4j
+
+#httpcomponents:httpcore
+#httpcomponents:httpclient
+org.apache.http
+org.apache.http.*
+
+#lucene
+org.apache.lucene
+org.apache.lucene.*
+
+#velocity-tools
+org.apache.velocity.tools.*
+
+#Velocity
+org.apache.velocity
+org.apache.velocity.*
+
+# oro
+org.apache.oro.*
+
+#commons-logging
+org.apache.commons.logging
+org.apache.commons.logging.*
+
+#commons-pool2
+org.apache.commons.pool2
+org.apache.commons.pool2.*
+
+#commons-text.
+org.apache.commons.text
+org.apache.commons.text.*
+
+#commons-lang3
+org.apache.commons.lang3
+org.apache.commons.lang3.*
+
+# commons-fileupload spring uses it, non-DMZable
+org.apache.commons.fileupload.*
+
+#commons-io - used in jira-api
+org.apache.commons.io
+org.apache.commons.io.*
+
+# commons-beanutils
+org.apache.commons.beanutils
+org.apache.commons.beanutils.*
+
+#commons-collections:commons-collections
+org.apache.commons.collections
+org.apache.commons.collections.*
+
+# commons-compress
+org.apache.commons.compress
+org.apache.commons.compress.*
+
+# commons-codec
+org.apache.commons.codec
+org.apache.commons.codec.*
+
+# xerces
+org.apache.html.*
+org.apache.wml
+org.apache.wml.*
+org.apache.xerces.*
+org.apache.xml.*
+
+#xml-apis
+org.apache.xmlcommons
+
+# batik
+org.apache.batik
+org.apache.batik.*
+
+#xmlgraphics-commons
+org.apache.xmlgraphics.*
+
+# commons-pool, used by velocity, but theoretically DMZable as it's not exposed
+org.apache.commons.pool
+org.apache.commons.pool.*
+
+# commons-collections4 imported by internal plugins, but not used in exported signatures
+org.apache.commons.collections4
+org.apache.commons.collections4.*
+
+# commons-configuration:commons-configuration, unused, DMZable
+org.apache.commons.configuration
+org.apache.commons.configuration.*
+
+# commons-daemon from tomcat, DMZ
+org.apache.commons.daemon
+org.apache.commons.daemon.*
+
+#commons-dbcp2, DMZable?
+org.apache.commons.dbcp2
+org.apache.commons.dbcp2.*
+
+#commons-digester, nobody imports it, unused in jira
+org.apache.commons.digester
+org.apache.commons.digester.*
+
+#commons-discovery:commons-discovery, remove completely
+org.apache.commons.discovery
+org.apache.commons.discovery.*
+
+#commons-jexl - remove completely, unused
+org.apache.commons.jexl
+org.apache.commons.jexl.*
+
+
+#commons-jrcs - remove completely unused
+org.apache.commons.jrcs.diff
+org.apache.commons.jrcs.diff.*
+org.apache.commons.jrcs.util
+
+# commons-validator DMZable
+org.apache.commons.validator
+org.apache.commons.validator.*
+
+#Part of tomcat
+org.apache.coyote
+org.apache.el
+org.apache.el.*
+org.apache.jasper
+org.apache.juli
+org.apache.juli.*
+org.apache.tomcat
+org.apache.catalina
+
+# apache-tika, from atlassian-http, sounds DMZable
+org.apache.tika
+org.apache.tika.*
+
+#apache-felix
+org.osgi.*
+org.apache.felix.*
+
+#jersey 1
+com.sun.jersey.*
+
+#com.google.code.findbugs:annotations
+net.jcip.annotations
+
+#jackson 1
+org.codehaus.jackson
+org.codehaus.jackson.*
+
+#jackson 2
+com.fasterxml.jackson.annotation
+
+#jersey
+com.sun.jersey.*
+
+#dom4j
+org.dom4j
+org.dom4j.*
+
+#gemini-blueprint-core
+org.eclipse.gemini.blueprint
+org.eclipse.gemini.blueprint.*
+
+#joda time
+org.joda.time
+org.joda.time.*
+
+#org.json:json
+org.json
+
+#exported by functest-plugin only, not present in production, but we don't want plugin tests to be impossible
+org.junit
+org.junit.*
+junit.framework
+
+#ofbiz
+org.ofbiz.core.*
+
+#slf4j
+org.slf4j
+org.slf4j.*
+
+#spring
+org.springframework.*
+
+#scala
+scala
+scala.*
+
+#webwork
+webwork
+webwork.*
+
+#jdom1
+org.jdom
+org.jdom.*
+
+# jdom2
+org.jdom2
+org.jdom2.*
+
+# jfreechart
+org.jfree.*
+
+#rometools
+com.rometools.*
+
+# aopalliance
+org.aopalliance.*
+
+# jakarta-mail
+com.sun.mail.*
+
+#urlrewritefilter
+org.tuckey.web.filters.urlrewrite.*
+
+# jackson-module-scala
+com.fasterxml.jackson.module.scala2_10
+
+# com.github.rholder:guava-retrying - JSW
+com.github.rholder.retry.*
+
+# querydsl-sql, comes with JSW and JSM
+com.mysema.commons.lang
+com.querydsl.*
+
+# com.springsource.com.sun.syndication and rome:rome:1.0 bundles
+com.sun.syndication
+com.sun.syndication.*
+
+# xstream
+com.thoughtworks.xstream
+com.thoughtworks.xstream.*
+
+# JSM timed-promise production package shouldn't export these I believe.
+it.com.atlassian.servicedesk.plugins.automation
+
+# icaj4j
+net.fortuna.ical4j
+
+# net.oauth
+net.oauth
+net.oauth.*
+
+#bouncycastle
+org.bouncycastle
+org.bouncycastle.*
+
+#nekohtml
+org.cyberneko.html
+org.cyberneko.html.*
+
+#spring-security
+org.springframework.security.core

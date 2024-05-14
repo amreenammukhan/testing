@@ -1,0 +1,15 @@
+@import "../../../ui/imports/jira-colours-lookandfeel";
+
+// Aesthetics
+.jira-dialog {
+    .dialog-menu-group {
+        .dialog-menu-item {
+            color: var(--jira-color-menuTxtColour);
+            &:active,
+            &.selected:active {
+                background-color: var(--jira-color-menuSeparatorColour);
+                color: var(--jira-color-menuTxtColour);
+            }
+        }
+    }
+}

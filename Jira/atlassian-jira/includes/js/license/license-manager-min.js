@@ -1,0 +1,1 @@
+define("jira/license/license-manager",["exports"],(function(e){"use strict";var i={};Object.defineProperty(i,"isDcLicense",{value:!0});e.isDcLicense=function(){return i.isDcLicense}}));

@@ -1,0 +1,22 @@
+#First party internal exports
+com.atlassian.jira.plugin.osgi
+
+#Third Party internal exports
+net.minidev.json
+net.minidev.json.*
+
+#Atlassian REST
+com.atlassian.plugins.rest.api.internal.*
+
+com.atlassian.jira.themes.*
+com.atlassian.theme.*
+
+com.atlassian.servicedesk.internal.api.admin
+com.atlassian.servicedesk.internal.api.capability
+com.atlassian.servicedesk.internal.api.confluenceknowledgebase
+com.atlassian.servicedesk.internal.api.emailchannel.emailplatform
+com.atlassian.servicedesk.internal.api.feature.customer.user.signup
+com.atlassian.servicedesk.internal.api.feature.customer.user
+com.atlassian.servicedesk.internal.api.permission.misconfiguration
+com.atlassian.servicedesk.internal.api.rest.responses.portal
+com.atlassian.servicedesk.internal.api.upgrade

@@ -1,0 +1,29 @@
+{namespace JIRA.Templates.DarkThemeStyles}
+
+/**
+ * @param originalThemeVariables
+ * @param darkThemeVariables
+ */
+{template .lookAndFeelDarkThemeStyles}
+    {literal}
+    <style>
+        html:not([data-theme]),
+        html[data-color-mode="dark"][data-theme~="dark:light"],
+        html[data-color-mode="light"][data-theme~="light:light"],
+        html[data-color-mode="light"][data-theme~="light:original"] {
+    {/literal}
+            {foreach $colour in $originalThemeVariables}
+                {$colour}
+            {/foreach}
+    {literal}
+        }
+        html[data-color-mode="dark"] {
+    {/literal}
+            {foreach $colour in $darkThemeVariables}
+                {$colour}
+            {/foreach}
+    {literal}
+        }
+    </style>
+    {/literal}
+{/template}
